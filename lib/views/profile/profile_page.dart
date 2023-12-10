@@ -11,11 +11,13 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.cardColor,
-      child: const Column(
-        children: [
-          ProfileHeader(),
-          ProfileMenuOptions(),
-        ],
+      child: const SingleChildScrollView(
+        child: Column(
+          children: [
+            ProfileHeader(),
+            ProfileMenuOptions(),
+          ],
+        ),
       ),
     );
   }
